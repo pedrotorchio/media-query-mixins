@@ -1,0 +1,65 @@
+$sm : 568px;
+$md : 768px;
+$lg : 1024px;
+$xl : 1280px;
+
+@mixin min($width) {
+  @media (min-width: (#{$width})) {
+    @content;
+  }
+}
+@mixin max($width) {
+  @media (max-width: (#{$width})) {
+    @content;
+  }
+}
+@mixin sm {
+  @include min($sm) {
+    @content;
+  }
+}
+@mixin md {
+  @include min($md) {
+    @content;
+  }
+}
+@mixin lg {
+  @include min($lg) {
+    @content;
+  }
+}
+@mixin xl {
+  @include min($xl) {
+    @content;
+  }
+}
+@mixin rSm {
+  @include max($sm - 1) {
+    @content;
+  }
+}
+@mixin rMd {
+  @include max($md - 1) {
+    @content;
+  }
+}
+@mixin rLg {
+  @include max($lg - 1) {
+    @content;
+  }
+}
+@mixin rXl {
+  @include max($xl - 1) {
+    @content;
+  }
+}
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}

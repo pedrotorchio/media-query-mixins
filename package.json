@@ -1,0 +1,61 @@
+{
+  "_from": "media-query-mixins@^3.0.4",
+  "_id": "media-query-mixins@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-iJYFjYXh49ypoUR0KVT/BiVpZNAFIwdMkEHl9YqF+VHXFxoSZaZjQqIcYxanmHcTKyK9IQEIrSzKBmU1eE4nqw==",
+  "_location": "/media-query-mixins",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "media-query-mixins@^3.0.4",
+    "name": "media-query-mixins",
+    "escapedName": "media-query-mixins",
+    "rawSpec": "^3.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.4"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/media-query-mixins/-/media-query-mixins-3.1.0.tgz",
+  "_shasum": "ee3c5ac2145823c6b4a513a9f759d1edcb494ec4",
+  "_spec": "media-query-mixins@^3.0.4",
+  "_where": "/Users/pedrotorchio/projetos/web/torchiodev.com/v2/development",
+  "author": {
+    "name": "Pedro Torchio",
+    "email": "pedro@torchiodev.com",
+    "url": "http://www.torchiodev.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrotorchio/media-query-mixins/issues",
+    "email": "pedro@torchiodev.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Usefull, very lightweight media query JAVASCRIPT, stylus and scss mixins for predefined responsive breakpoints and orientation ",
+  "homepage": "https://github.com/pedrotorchio/media-query-mixins#readme",
+  "keywords": [
+    "scss",
+    "js",
+    "javascript",
+    "methods",
+    "mixins",
+    "media-query",
+    "sass",
+    "stylus",
+    "styl"
+  ],
+  "license": "ISC",
+  "main": "_mixins.scss",
+  "name": "media-query-mixins",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrotorchio/media-query-mixins.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.1.0"
+}

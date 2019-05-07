@@ -1,0 +1,45 @@
+
+mobileFirst = true;
+
+sm-size = 568px;
+md-size = 768px;
+lg-size = 1024px;
+xl-size = 1280px;
+
+if mobileFirst
+  sm-size = sm-size + 1;
+  md-size = md-size + 1;
+  lg-size = lg-size + 1;
+  xl-size = xl-size + 1;
+  first = 'min';
+else
+  sm-size = sm-size - 1;
+  md-size = md-size - 1;
+  lg-size = lg-size - 1;
+  xl-size = xl-size - 1;
+  first = 'max';
+
+sm()
+  @media ({first}-width: sm-size)
+    {block}
+  
+md()
+  @media ({first}-width: md-size)
+    {block}
+
+lg()
+  @media ({first}-width: lg-size)
+    {block}
+
+xl()
+  @media ({first}-width: xl-size)
+    {block}
+
+portrait()
+  @media (orientation: portrait)
+    {block}
+
+landscape()
+  @media (orientation: landscape)
+    {block}
+
