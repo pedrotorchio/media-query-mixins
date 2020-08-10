@@ -3,7 +3,7 @@
 NOW WITH JAVASCRIPT BREAKPOINTS (see at the bottom)
 
 Extremely lightweight, very basic mixin set for responsive MOBILE FIRST SCSS, JAVASCRIPT ~~and Stylus~~ development. **(Stylus is discontinued)**
-Currently, there are the following breakpoints (inclusive for mobile-first and exclusive for desktop-first):
+Currently, it adheres to the following breakpoints (inclusive for mobile-first and exclusive for desktop-first):
 * sm: 568px
 * md: 768px
 * lg: 1024px
@@ -82,9 +82,20 @@ md(txt => `it's all fine, ${txt}`, 'md') ||
 sm(txt => `it's all fine, ${txt}`, 'sm') || 
 min(txt => `it's all fine, ${txt}`, 'min')
 ```
+
 This would return { result: "it's all fine, md", match: 'md' } for medium screens
 
-There are methods for desktop first aproach, where instead of testing min-width of the screen, it tests the max width. The fallback method calling would look like:
+###### Desktop first approache
+To reverse the mixins/functions, simply prepend them with a "r" in camel case, making them
+
+- rSm
+- rMd
+- rLg
+- rXl
+
+and instead of *min*, use *max*
+
+For example, a javascript fallback chain in desktop first would be
 
 ```javascript
 rSm(txt => `it's all fine, ${txt}`, 'sm') ||
